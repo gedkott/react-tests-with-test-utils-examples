@@ -1,6 +1,6 @@
 ## Some examples of tests with React Test Utils and jest
 
-# Build Commands on Windows
+# Build Commands
 
 Process 1: `npx parcel src\App.test.js index.html`
 
