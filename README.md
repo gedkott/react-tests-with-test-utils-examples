@@ -2,7 +2,7 @@
 
 # Build Commands
 
-Process 1: `npx parcel src\App.test.js index.html`
+Process 1: `npm run build`
 
 Now just edit your files and it auto-reloads.
 

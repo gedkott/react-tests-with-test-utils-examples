@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest dist"
+    "test": "jest dist",
+    "build": "parcel src\\App.test.js index.html"
   },
   "keywords": [],
   "author": "",
