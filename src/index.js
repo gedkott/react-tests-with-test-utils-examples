@@ -1,7 +1,6 @@
 import { lazy, StrictMode, Suspense } from "react";
 import React from "react";
 import ReactDOM from "react-dom";
-import "./styles.css";
 
 const App = lazy(() => import("./App.js"));
 
