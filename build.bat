@@ -1,1 +1,0 @@
-call npx parcel src\App.test.js index.html

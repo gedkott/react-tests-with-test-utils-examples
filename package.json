@@ -2,30 +2,35 @@
   "name": "react-suspense-and-lazy-testing",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "test": "jest dist",
-    "build": "parcel src\\App.test.js index.html"
+    "test": "jest",
+    "build": "webpack --config webpack.config.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {},
   "devDependencies": {
-    "@babel/core": "^7.15.0",
+    "@babel/core": "^7.15.4",
+    "@babel/preset-env": "^7.15.4",
     "@babel/preset-react": "^7.14.5",
     "@material-ui/core": "^4.12.3",
-    "jest": "^27.1.0",
-    "parcel-bundler": "^1.12.5",
+    "babel-loader": "^8.2.2",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "webpack": "^5.52.0",
+    "webpack-cli": "^4.8.0",
+    "jest": "^27.1.0",
+    "regenerator-runtime": "^0.13.9"
   },
   "babel": {
     "presets": [
-      "@babel/preset-react"
+      "@babel/preset-react",
+      "@babel/preset-env"
     ]
   },
   "jest": {
-    "testEnvironment": "jsdom"
+    "testEnvironment": "jsdom",
+    "setupFilesAfterEnv": ["./setupTests.js"]
   }
 }

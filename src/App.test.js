@@ -2,7 +2,6 @@ import ReactTestUtils from 'react-dom/test-utils';
 import ReactDom from 'react-dom';
 import React from 'react';
 import { Suspense } from "react";
-import "./styles.css";
 
 const act = ReactTestUtils.act;
 
