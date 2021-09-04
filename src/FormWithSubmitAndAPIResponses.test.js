@@ -71,7 +71,7 @@ function awaitSomething(f) {
     });
 }
 
-it('works with a form, mocked API call (just through a prop onSubmit), and rendering different content based on response (success)', () => {
+it('works with a form, mocked API call (just through a prop apiResponse), and rendering different content based on response (success)', () => {
     const accountId = '12345';
     const onReceiveAccountID = jest.fn();
     const apiPromise = Promise.resolve({ accountId, message: `Welcome, ${"Gedalia"} ${"Kott"}`});
@@ -135,7 +135,7 @@ it('works with a form, mocked API call (just through a prop onSubmit), and rende
     });
 });
 
-it('works with a form, mocked API call (just through a prop onSubmit), and rendering different content based on response (error)', () => {
+it('works with a form, mocked API call (just through a prop apiResponse), and rendering different content based on response (error)', () => {
     const onReceiveAccountID = jest.fn();
     const apiPromise = Promise.reject({ error: "Bad Request" });
     const mockApiService = { callAPI: ({ firstName: _firstName, lastName: _lastName }) => {
